@@ -43,24 +43,29 @@ img {
 /* ここからcss */
 .wrap {
     display: flex;
+    justify-content: space-between;
     max-width: 960px;
+    margin: 0 auto;
 }
 
 h1 {
     font-size: 50px;
-    padding-top: 50px;
-    justify-content: space-between;
     margin: 0 auto;
+    justify-content: space-between;
 }
 
 ul {
     display: flex;
     margin: 0 auto;
-    justify-content: space-between;
 }
 
 ul li {
-    padding: 50px 10px;
+    margin: 50px 10px;
+    padding: 0px 10px;
     font-size: 20px;
     border-right: 1px solid;
+}
+
+li:last-child {
+    border-style: none;
 }
