@@ -46,6 +46,7 @@ img {
     justify-content: space-between;
     max-width: 960px;
     margin: 0 auto;
+    align-items: center;
 }
 
 h1 {
@@ -68,4 +69,26 @@ ul li {
 
 li:last-child {
     border-style: none;
+}
+
+@media screen and (max-width: 767px) {
+    .wrap {
+        flex-direction: column;
+    }
+
+    ul {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    ul li {
+        border-right: none;
+        border-bottom: 1px solid;
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    li:last-child {
+        border-bottom: 1px solid;
+    }
 }
