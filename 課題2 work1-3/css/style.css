@@ -73,11 +73,11 @@ li:last-child {
 
 @media screen and (max-width: 767px) {
     .wrap {
-        flex-direction: column;
+        display: block;
     }
 
     ul {
-        flex-direction: column;
+        display: block;
         text-align: left;
     }
 
@@ -85,7 +85,6 @@ li:last-child {
         border-right: none;
         border-bottom: 1px solid;
         padding: 10px;
-        max-width: 100%;
     }
 
     li:last-child {
